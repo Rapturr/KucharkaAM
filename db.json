@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "Przepis na Bułki",
+      "ingredients": "*",
+      "description": "Krok 1. Kup bułki w sklepie, Krok 2. masz bułki"
+    },
+    {
+      "id": 1,
+      "name": "Przepis na masło",
+      "ingredients": "*",
+      "description": "Krok 1. Kup masło w sklepie, Krok 2. masz masło"
+    },
+    {
+      "id": 2,
+      "name": "Przepis na pomidorki",
+      "ingredients": "*",
+      "description": "Krok 1. Kup pomidorki w sklepie, Krok 2. masz pomidorki"
+    },
+    {
+      "name": "Paele",
+      "ingredients": "*Kapusta *Kielbasa",
+      "description": "Bigos = Polskie Paele",
+      "id": 3
+    },
+    {
+      "name": "Przepis na Kaczkę",
+      "ingredients": "*1 Dorosły Wykrota",
+      "description": "Upiecz Gnoja xD",
+      "id": 5
+    },
+    {
+      "name": "Przepis na coś",
+      "ingredients": "*1 cos *2 cosie",
+      "description": "łączysz cosie",
+      "id": 6
+    }  
+  ]
+}
