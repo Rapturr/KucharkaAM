@@ -9,8 +9,8 @@ export default function drawerNavi() {
     return(
     <NavigationContainer>
         <drawer.Navigator>
-            <drawer.Screen name = "Home" component = {tabNaviHome} options={{headerShown:false}}/>
-            <drawer.Screen name = "List" component = {tabNaviList} options={{headerShown:false}}/>
+            <drawer.Screen name = "Home1" component = {tabNaviHome} options={{headerShown:false}}/>
+            <drawer.Screen name = "List1" component = {tabNaviList} options={{headerShown:false}}/>
         </drawer.Navigator>
     </NavigationContainer>
     )

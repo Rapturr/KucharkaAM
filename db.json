@@ -35,6 +35,12 @@
       "ingredients": "*1 cos *2 cosie",
       "description": "łączysz cosie",
       "id": 6
-    }  
+    },
+    {
+      "name": "Klopsiki",
+      "ingredients": "*Klopsik, *2Klopsiki",
+      "description": "Połóż na talerzu, masz 3 klopsiki :)",
+      "id": 7
+    }
   ]
 }

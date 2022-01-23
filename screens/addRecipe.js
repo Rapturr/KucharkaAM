@@ -1,20 +1,13 @@
 import {useState} from 'react'
-import {StyleSheet} from 'react-native'
-import mystyles from './style'
+import {TextInput, Button, View} from 'react-native'
+import styles from './style'
 
 const AddData = ({onAdd})=>{
     const [name, setName] = useState('')
     const [ingredients, setIngredients] = useState('')
     const [description, setDescription] = useState('')
 
-    const onSubmit = (e) => {
-        e.preventDefault()
-    
-        if (!name) {
-          alert('Dodaj danie')
-          return
-        }
-    
+    const onSubmit = () => {
         onAdd({ name, ingredients, description })
     
         setName('')
@@ -23,37 +16,21 @@ const AddData = ({onAdd})=>{
       }
 
     return (
-        <form className='add-form' onSubmit={onSubmit}>
-          <div className='form-control'>
-            <label>Nazwa Dania<br /></label>
-            <input
-              type='text'
-              placeholder='Name of the dish'
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div className='form-control'>
-            <label>Lista składników<br /></label>
-            <input
-              type='text'
-              placeholder='List of ingredients'
-              value={ingredients}
-              onChange={(e) => setIngredients(e.target.value)}
-            />
-          </div>
-          <div className='form-control'>
-            <label>Przepis<br /></label>
-            <input
-              type='text'
-              placeholder='Recipe'
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-            />
-          </div>
-    
-          <input type='submit' value='Save Dish' className='btn btn-block' />
-        </form>
+        <View>
+          <TextInput placeholder='Nazwa dania'
+                onChangeText={(text)=>{setName(text)}} 
+                style ={styles.input}/>
+
+                <TextInput placeholder='Składniki'
+                onChangeText={(text)=>{setIngredients(text)}} 
+                style ={styles.input}/>
+
+                <TextInput placeholder='Opis/przepis '
+                onChangeText={(text)=>{setDescription(text)}} 
+                style ={styles.input}/>
+
+                <Button title='Dodaj' onPress={()=>{onSubmit()}} />
+        </View>
       )
 }
 

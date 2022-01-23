@@ -21,7 +21,8 @@ export default function AddRecipeScreen({ navigation, route, newData}){
     }
 
     const addRecipe = async (data) => {
-        const res = await fetch('http://localhost:5000/data',{
+      console.log(data)
+      const res = await fetch('http://localhost:5000/data',{
           method: 'POST',
           headers: {
             'Content-type': 'application/json',

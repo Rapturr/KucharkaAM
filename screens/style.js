@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         lineHeight: 21,
         fontWeight: 'bold',
         letterSpacing: 0.25,
-        color: '#white',
+        color: 'white',
       },
       dataText: {
         fontSize: 16,
@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
         letterSpacing: 0.25,
         color: 'black',
         backgroundColor: '#204075',
-        lineWidth:'70%',
         borderWidth:2,
         borderRadius: 6,
         textAlign: 'center'
@@ -57,6 +56,11 @@ const styles = StyleSheet.create({
         marginVertical: 30,
         height: 1,
         width: '80%',
+      },
+      input: {
+        borderWidth:2,
+        borderColor: '#75f6df',
+        margin: 20,
       },
   });
 

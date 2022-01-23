@@ -1,5 +1,5 @@
 import { View, Text } from "react-native"
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { TouchableOpacity } from "react-native-gesture-handler"
 import styles from './style'
 
 const DataInstance = ({ dataInstance, onDelete, onToggle}) => {
