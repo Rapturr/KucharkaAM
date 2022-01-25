@@ -5,6 +5,7 @@ import {ImageBackground } from 'react-native';
 import AddRec from './addRecipe'
 import styles from './style'
 import {urel} from '../App'
+import { StatusBar } from 'expo-status-bar';
 
 export default function AddRecipeScreen({ navigation, route, newData}){
     const [data, setdata] = useState([])
@@ -15,7 +16,7 @@ export default function AddRecipeScreen({ navigation, route, newData}){
         }
       getData()
     }, [])
-    //Fetch data
+    
     const fetchData = async() =>{
       const res = await fetch(urel+'/data')
       const data = await res.json()
@@ -38,6 +39,7 @@ export default function AddRecipeScreen({ navigation, route, newData}){
         <View style={styles.container}>
           <ImageBackground source={require('../assets/Lemons.png')} style={styles.bgimage}>
             <AddRec onAdd = {addRecipe}/>
+            <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
             </ImageBackground>
         </View>
     )

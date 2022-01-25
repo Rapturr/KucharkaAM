@@ -1,6 +1,7 @@
 import React from "react";
 import { Pressable, Text, View, Linking, ImageBackground } from 'react-native';
 import styles from './style'
+import { StatusBar } from 'expo-status-bar';
 
 export default function helpScreen({navigation}) {
 
@@ -33,6 +34,7 @@ export default function helpScreen({navigation}) {
             <Pressable style={styles.button} onPress={naviHome}>
                 <Text style={styles.text}>Powrót</Text>
             </Pressable>
+            <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
         </ImageBackground>
     </View>
     )

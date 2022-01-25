@@ -1,6 +1,7 @@
 import React from "react";
 import { Pressable, Text, View } from 'react-native';
 import styles from './style'
+import { StatusBar } from 'expo-status-bar';
 
 export default function Gallery({navigation}) {
 
@@ -20,6 +21,8 @@ export default function Gallery({navigation}) {
         <Pressable style={styles.button} onPress={naviHome}>
             <Text style={styles.text}>Powrót</Text>
         </Pressable>
+        
+        <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
         </View>
     )
 }

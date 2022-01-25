@@ -2,7 +2,8 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import {DrawerNavi, DrawerNavi1} from './naviDrawer'
+import {Draw, Draw1} from './naviDrawer'
+import {HomeScreenNavigator, ListScreenNavigator} from './naviStack'
  
 const Tab = createBottomTabNavigator();
 
@@ -24,8 +25,8 @@ export default function tabNaviHome() {
           tabBarInactiveTintColor: 'gray',
         })}
         >
-            <Tab.Screen name = "HomeScreen"  component = {DrawerNavi} options={{headerShown:false}}/>
-            <Tab.Screen name = "RecipeList" component = {DrawerNavi1} options={{headerShown:false}}/>
+            <Tab.Screen name = "HomeScreen"  component = {Draw} options={{headerShown:false}}/>
+            <Tab.Screen name = "RecipeList" component = {Draw1} options={{headerShown:false}}/>
         </Tab.Navigator>
         </NavigationContainer>
     )

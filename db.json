@@ -4,85 +4,99 @@
       "id": 0,
       "name": "Przepis na Bułki",
       "ingredients": "*",
-      "description": "Krok 1. Kup bułki w sklepie, Krok 2. masz bułki"
+      "description": "Krok 1. Kup bułki w sklepie, Krok 2. masz bułki",
+      "counter": 17
     },
     {
       "id": 1,
       "name": "Przepis na masło",
       "ingredients": "*",
-      "description": "Krok 1. Kup masło w sklepie, Krok 2. masz masło"
+      "description": "Krok 1. Kup masło w sklepie, Krok 2. masz masło",
+      "counter": 3
     },
     {
       "id": 2,
       "name": "Przepis na pomidorki",
       "ingredients": "*",
-      "description": "Krok 1. Kup pomidorki w sklepie, Krok 2. masz pomidorki"
+      "description": "Krok 1. Kup pomidorki w sklepie, Krok 2. masz pomidorki",
+      "counter": 2
     },
     {
+      "id": 3,
       "name": "Paele",
       "ingredients": "*Kapusta *Kielbasa",
       "description": "Bigos = Polskie Paele",
-      "id": 3
+      "counter": 2
     },
     {
+      "id": 5,
       "name": "Przepis na Kaczkę",
       "ingredients": "*1 Dorosły Wykrota",
       "description": "Upiecz Gnoja xD",
-      "id": 5
+      "counter": 2
     },
     {
+      "id": 6,
       "name": "Przepis na coś",
       "ingredients": "*1 cos *2 cosie",
       "description": "łączysz cosie",
-      "id": 6
+      "counter": 1
     },
     {
+      "id": 7,
       "name": "Klopsiki",
       "ingredients": "*Klopsik, *2Klopsiki",
       "description": "Połóż na talerzu, masz 3 klopsiki :)",
-      "id": 7
+      "counter": 1
     },
     {
+      "id": 12,
       "name": "Przepis na inne Pomidorki",
       "ingredients": "Szklarnia, nasionka",
       "description": "Postaw szklarnię, posadź pomidorki",
-      "id": 12
+      "counter": 3
     },
     {
+      "id": 13,
       "name": "as",
       "ingredients": "as",
       "description": "ga",
-      "id": 13
+      "counter": 3
     },
     {
+      "id": 14,
       "name": "Przepis na głąba",
       "ingredients": "*1 Grzegorz\n*1 BMW- najlepiej czarne",
       "description": "Połącz, masz głąba",
-      "id": 14
+      "counter": 3
     },
     {
+      "id": 15,
       "name": "Słodka kasia",
       "ingredients": "1 kasia",
       "description": "",
-      "id": 15
+      "counter": 2
     },
     {
+      "id": 16,
       "name": "Przepis",
       "ingredients": "Składnik 1\nSkładnik 2\n",
       "description": "Złącz złącza, składź składniki",
-      "id": 16
+      "counter": 1
     },
     {
+      "id": 17,
       "name": "Przepis na blyny",
       "ingredients": "1kg ziemniaków\nOlej\n",
       "description": "Zetrzyj ziemniaki na tarce na średnich oczkach\nSmaż na głębokim oleju",
-      "id": 17
+      "counter": 3
     },
     {
+      "id": 18,
       "name": "Góra trzy",
       "ingredients": "Szklanka wódki może dwie góra trzy\nSzklanka whisky może dwie góra trzy\nSzklanka wina może dwie góra trzy",
       "description": "Wszytko wrzucasz do garnka i mieszasz. Robisz łyczek, no dwa, góra trzy po czym robisz kroczek, no może dwa, góra trzy",
-      "id": 27
+      "counter": 1
     }
   ]
 }

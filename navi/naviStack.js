@@ -9,7 +9,6 @@ import imageGallery from '../screens/imageGallery'
 import images from '../screens/showImages'
 import cameraScreen from '../screens/cameraScreen'
 import Help from '../screens/helpScreen'
-import sciaga from '../screens/sciaga'
 
 
 const Stack = createStackNavigator();
@@ -26,7 +25,6 @@ const HomeScreenNavigator = () => {
             <Stack.Screen name="cameraScreen" component={cameraScreen}/>
             <Stack.Screen name="Help" component={Help}/>
             <Stack.Screen name="images" component={images}/>
-            <Stack.Screen name="sciaga" component={sciaga}/>
         </Stack.Navigator>
     )
 }
@@ -44,7 +42,6 @@ const ListScreenNavigator = () => {
             <Stack.Screen name="cameraScreen" component={cameraScreen}/>
             <Stack.Screen name="Help" component={Help}/>
             <Stack.Screen name="images" component={images}/>
-            <Stack.Screen name="sciaga" component={sciaga}/>
         </Stack.Navigator>
     )
 }

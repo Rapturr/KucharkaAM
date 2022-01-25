@@ -12,6 +12,13 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#888888',
     },
+    przepistekst: {
+      borderWidth: 1,
+      padding: 10,
+      width: '100%',
+      backgroundColor: 'rgba(0,0,0,0.5)',
+      margin: 2,
+    },
     bgimage: {
       alignItems: 'center',
       justifyContent: 'center',
@@ -31,6 +38,19 @@ const styles = StyleSheet.create({
       elevation: 3,
       backgroundColor: '#AAAAAA',
       marginVertical: 20,
+      alignItems: 'center',
+      borderWidth: 1,
+      color: '#000000',
+    },
+    button_1: {
+      justifyContent: 'center',
+      paddingVertical: 20,
+      paddingHorizontal: 32,
+      borderRadius: 4,
+      width: 200,
+      elevation: 3,
+      backgroundColor: '#AAAAAA',
+      marginVertical: 45,
       alignItems: 'center',
       borderWidth: 1,
       color: '#000000',
@@ -92,6 +112,15 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       color: 'white',
     },
+    sciaga: {
+      fontSize: 12,
+      bottom: 0,
+      fontWeight: 'bold',
+      justifyContent: 'center',
+      color: '#446562',
+      marginLeft: 20,
+
+    },
     separator: {
       marginVertical: 30,
       height: 1,
@@ -100,7 +129,7 @@ const styles = StyleSheet.create({
     input: {
       borderWidth:2,
       borderColor: '#AAAAAA',
-      margin: 20,
+      margin:20,
       width:280,
       padding: 15,
       backgroundColor: 'rgba(1,1,1,0.8)',

@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import {TextInput, Button, View, ScrollView, Pressable, Text} from 'react-native'
 import styles from './style'
+import { StatusBar } from 'expo-status-bar';
 
 const AddData = ({onAdd})=>{
     const [name, setName] = useState('')
@@ -20,7 +21,14 @@ const AddData = ({onAdd})=>{
         <View style={styles.container}>
           <TextInput placeholder='Nazwa dania'
                 onChangeText={(text)=>{setName(text)}} 
-                style ={styles.input}multiline = {true}
+                style ={{borderWidth:2,
+                  borderColor: '#AAAAAA',
+                  marginTop:100,
+                  marginBottom:20,
+                  width:280,
+                  padding: 15,
+                  backgroundColor: 'rgba(1,1,1,0.8)',
+                  color: 'white',}}multiline = {true}
                 numberOfLines={1}
                 maxLength={50}
                 />
@@ -38,6 +46,7 @@ const AddData = ({onAdd})=>{
                 <Pressable style={styles.przycisk} onPress={()=>onSubmit()}>
                   <Text>Dodaj Przepis</Text>
                 </Pressable>
+                <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
         </View>
         </ScrollView>
       )
