@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Pressable } from 'react-native';
+import { Text, View, Pressable, ImageBackground } from 'react-native';
 import { FaCreativeCommonsPd } from "react-icons/fa";
 import styles from './style'
 
@@ -16,24 +16,26 @@ export default function Recipe({navigation, route}) {
     }
     return(
     <View style={styles.Przepiscontainer}>
-        <Text style={styles.text}>
+      <ImageBackground source={require('../assets/Lemons.png')} style={styles.bgimage}>
+        <Text style={styles.authors}>
           {name}
         </Text>
-        <Text style={styles.text}>
+        <Text style={styles.authors}>
           Składniki:
         </Text>
-        <Text style={styles.text}>
+        <Text style={styles.authors}>
         {ingredients}
         </Text>
-        <Text style={styles.text}>
+        <Text style={styles.authors}>
           Przepis:
         </Text>
-        <Text style={styles.text}>
+        <Text style={styles.authors}>
           {desc}
         </Text>
     <Pressable style={styles.button}  title='Return' onPress={onPressHandler}>
-      <Text style={styles.text}>Return</Text>
+      <Text style={styles.text}>Powrót</Text>
     </Pressable>
+    </ImageBackground>
     </View>
     )
 }

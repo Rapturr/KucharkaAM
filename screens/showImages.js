@@ -27,7 +27,7 @@ export default function Gallery({navigation}) {
             <Image style={styles.foodimages} source={require(image4)}/>
             
             <Pressable style={styles.button} title='About' onPress={naviHome}>
-                <Text style={styles.text}>Return</Text>
+                <Text style={styles.text}>Powrót</Text>
             </Pressable>
         </View>
         </ScrollView>

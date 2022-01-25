@@ -79,58 +79,10 @@
       "id": 17
     },
     {
-      "name": "XDDDD",
-      "ingredients": "Fjhdbf",
-      "description": "Dndbbd",
-      "id": 18
-    },
-    {
-      "name": "",
-      "ingredients": "",
-      "description": "",
-      "id": 19
-    },
-    {
-      "name": "",
-      "ingredients": "",
-      "description": "",
-      "id": 20
-    },
-    {
-      "name": "A",
-      "ingredients": "B",
-      "description": "C\n",
-      "id": 21
-    },
-    {
-      "name": "",
-      "ingredients": "",
-      "description": "",
-      "id": 22
-    },
-    {
-      "name": "",
-      "ingredients": "",
-      "description": "",
-      "id": 23
-    },
-    {
-      "name": "",
-      "ingredients": "",
-      "description": "",
-      "id": 24
-    },
-    {
-      "name": "",
-      "ingredients": "",
-      "description": "",
-      "id": 25
-    },
-    {
-      "name": "",
-      "ingredients": "",
-      "description": "",
-      "id": 26
+      "name": "Góra trzy",
+      "ingredients": "Szklanka wódki może dwie góra trzy\nSzklanka whisky może dwie góra trzy\nSzklanka wina może dwie góra trzy",
+      "description": "Wszytko wrzucasz do garnka i mieszasz. Robisz łyczek, no dwa, góra trzy po czym robisz kroczek, no może dwa, góra trzy",
+      "id": 27
     }
   ]
 }

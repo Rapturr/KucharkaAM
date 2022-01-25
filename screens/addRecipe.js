@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {TextInput, Button, View, ScrollView} from 'react-native'
+import {TextInput, Button, View, ScrollView, Pressable, Text} from 'react-native'
 import styles from './style'
 
 const AddData = ({onAdd})=>{
@@ -17,11 +17,13 @@ const AddData = ({onAdd})=>{
 
     return (
         <ScrollView>
-        <View>
+        <View style={styles.container}>
           <TextInput placeholder='Nazwa dania'
                 onChangeText={(text)=>{setName(text)}} 
                 style ={styles.input}multiline = {true}
-                numberOfLines={1}/>
+                numberOfLines={1}
+                maxLength={50}
+                />
 
                 <TextInput placeholder='Składniki'
                 onChangeText={(text)=>{setIngredients(text)}} 
@@ -32,10 +34,10 @@ const AddData = ({onAdd})=>{
                 onChangeText={(text)=>{setDescription(text)}} 
                 style ={styles.input}multiline = {true}
                 numberOfLines={12}
-                
                 />
-
-                <Button style={styles.przycisk} title='Dodaj' onPress={()=>{onSubmit()}} />
+                <Pressable style={styles.przycisk} onPress={()=>onSubmit()}>
+                  <Text>Dodaj Przepis</Text>
+                </Pressable>
         </View>
         </ScrollView>
       )

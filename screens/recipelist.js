@@ -41,7 +41,7 @@ export default function List({navigation}) {
       </Pressable>
 
       <Pressable style={styles.button}  title='Return' onPress={onPressHandler}>
-        <Text style={styles.text}>Return</Text>
+        <Text style={styles.text}>Powrót</Text>
       </Pressable>
 
       <Data data={data} onToggle={openRecipe}></Data>
