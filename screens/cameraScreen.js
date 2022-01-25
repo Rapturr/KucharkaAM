@@ -15,7 +15,7 @@ export default function Camera({navigation}) {
 
     return(
         <View>
-            <cam></cam>
+            {cam}
         </View>
     )
 }

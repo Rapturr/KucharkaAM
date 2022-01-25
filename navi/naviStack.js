@@ -7,6 +7,7 @@ import Recipe from '../screens/showRecipe'
 import NewRecipe from '../screens/addRecipeScreen'
 import imageGallery from '../screens/imageGallery'
 import cameraScreen from '../screens/cameraScreen'
+import Help from '../screens/helpScreen'
 
 
 const Stack = createStackNavigator();
@@ -21,6 +22,7 @@ const HomeScreenNavigator = () => {
             <Stack.Screen name="NewRecipe" component={NewRecipe}/>
             <Stack.Screen name="imageGallery" component={imageGallery}/>
             <Stack.Screen name="cameraScreen" component={cameraScreen}/>
+            <Stack.Screen name="Help" component={Help}/>
         </Stack.Navigator>
     )
 }
@@ -36,6 +38,7 @@ const ListScreenNavigator = () => {
             <Stack.Screen name="NewRecipe" component={NewRecipe}/>
             <Stack.Screen name="imageGallery" component={imageGallery}/>
             <Stack.Screen name="cameraScreen" component={cameraScreen}/>
+            <Stack.Screen name="Help" component={Help}/>
         </Stack.Navigator>
     )
 }

@@ -21,14 +21,6 @@ export default function List({navigation}) {
       return data
     }
 
-    const fetchDataInstance = async(id) =>{
-      console.log("fetching id ",id);
-        const res = await fetch("http://localhost:5000/data/{id}")
-        const data = await res.json()
-        return data
-    }
-
-
     const onPressHandler = ()=>{
         navigation.navigate('Home');
     }

@@ -41,6 +41,12 @@
       "ingredients": "*Klopsik, *2Klopsiki",
       "description": "Połóż na talerzu, masz 3 klopsiki :)",
       "id": 7
+    },
+    {
+      "name": "",
+      "ingredients": "",
+      "description": "",
+      "id": 8
     }
   ]
 }
