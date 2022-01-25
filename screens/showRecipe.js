@@ -15,15 +15,21 @@ export default function Recipe({navigation, route}) {
       navigation.navigate('List')
     }
     return(
-    <View style={styles.container}>
+    <View style={styles.Przepiscontainer}>
         <Text style={styles.text}>
           {name}
         </Text>
         <Text style={styles.text}>
-          Składniki: {ingredients}
+          Składniki:
         </Text>
         <Text style={styles.text}>
-          Przepis: {desc}
+        {ingredients}
+        </Text>
+        <Text style={styles.text}>
+          Przepis:
+        </Text>
+        <Text style={styles.text}>
+          {desc}
         </Text>
     <Pressable style={styles.button}  title='Return' onPress={onPressHandler}>
       <Text style={styles.text}>Return</Text>

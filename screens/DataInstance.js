@@ -5,7 +5,7 @@ import styles from './style'
 const DataInstance = ({ dataInstance, onToggle}) => {
   return (
     <View>
-      <TouchableOpacity onPress={() => onToggle(dataInstance.id, dataInstance.name, dataInstance.description, dataInstance.ingredients)}>
+      <TouchableOpacity style={styles.recipebutton} onPress={() => onToggle(dataInstance.id, dataInstance.name, dataInstance.description, dataInstance.ingredients)}>
         <Text style = {styles.text1}>{dataInstance.name}</Text>
       </TouchableOpacity>
     </View>

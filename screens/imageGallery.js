@@ -9,23 +9,16 @@ export default function Gallery({navigation}) {
     }
 
     const naviGallery = ()=>{
-        
+        navigation.navigate('images')
     }
-    const naviCamera = ()=>{
-        navigation.navigate('cameraScreen')
-    }
-
+    
     return(
         <View style={styles.container}>
-        <Text style={styles.text}>Galeria</Text>
-        <Pressable style={styles.button} title='Lista dań' onPress={naviGallery}>
-            <Text style={styles.text}>button</Text>
+        <Pressable style={styles.button} onPress={naviGallery}>
+                <Text style={styles.text}>Galeria</Text>
         </Pressable>
-        <Pressable style={styles.button} title='Lista dań' onPress={naviCamera}>
-            <Text style={styles.text}>Kamera</Text>
-        </Pressable>
-        <Pressable style={styles.button} title='About' onPress={naviHome}>
-            <Text style={styles.text}>Return</Text>
+        <Pressable style={styles.button} onPress={naviHome}>
+            <Text style={styles.text}>Powrót</Text>
         </Pressable>
         </View>
     )

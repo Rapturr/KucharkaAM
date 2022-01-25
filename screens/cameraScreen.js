@@ -1,33 +1,64 @@
-import React from "react";
-import { Pressable, Text, View } from 'react-native';
+import React, { useState, useEffect, useRef  } from 'react';
+import {Text, View, TouchableOpacity, StatusBar} from 'react-native';
+import {MaterialIcons} from '@expo/vector-icons';
+import { Camera } from 'expo-camera';
 import styles from './style'
-import { cam } from './useCamera'
 
-export default function Camera({navigation}) {
+const useCamera = ({ navigation, sendPhoto, resetFlag }) => {
+	const [hasPermission, setHasPermission] = useState(null);
+	const [type, setType] = useState(Camera.Constants.Type.back);
+	const ref = useRef(null)
 
-    const naviHome = ()=>{
-        navigation.navigate('imageGallery');
-    }
+	  useEffect(() => {
+		(async () => {
+		  const { status } = await Camera.requestCameraPermissionsAsync();
+		  setHasPermission(status === 'granted');
+		})();
+	  }, []);
 
-    const naviGallery = ()=>{
-        
-    }
+		const _takePicture = async () => {
+			const photo = await ref.current.takePictureAsync()
+            console.log(photo.uri)
+			setImage(photo.uri)
+			sendPhoto(photo.uri)
+			resetFlag(0)
+		}
 
-    return(
-        <View>
-            {cam}
+	  if (hasPermission === null) {
+		return <View />;
+	  }
+	  if (hasPermission === false) {
+		return <Text>No access to camera</Text>;
+	  }
+  return (
+
+	 <View style={styles.camcontainer}>
+		 <StatusBar barStyle="light-content" />
+				
+      <Camera style={styles.camera} type={type} ref={ref}>
+        <View style={styles.buttonContainer}>
+
+			<TouchableOpacity
+				style={styles.flipbutton}
+				onPress={() => {
+					setType(
+						type === Camera.Constants.Type.back
+							? Camera.Constants.Type.front
+							: Camera.Constants.Type.back
+					);
+				}}>
+				<MaterialIcons name='flip-camera-ios' size={40} color={"white"}/>
+			</TouchableOpacity>
+
+		<TouchableOpacity style={styles.takebutton} onPress={_takePicture}>
+		<MaterialIcons name='camera' size={50} color={"white"}/>
+		</TouchableOpacity>
+		  
+
         </View>
-    )
+      </Camera>
+    </View>
+	
+  );
 }
-
-/*
-<View style={styles.container}>
-            <Text style={styles.text}>Camera Screen</Text>
-            <Pressable style={styles.button} title='Lista dań' onPress={naviGallery}>
-                <Text style={styles.text}>Lista dań</Text>
-            </Pressable>
-            <Pressable style={styles.button} title='Galeria' onPress={naviHome}>
-                <Text style={styles.text}>Galeria</Text>
-            </Pressable>
-        </View>
- */
+export default useCamera

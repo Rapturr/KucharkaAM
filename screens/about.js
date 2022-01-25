@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Pressable, Platform, View, Text } from 'react-native';
+import {ImageBackground, Pressable, Platform, View, Text } from 'react-native';
 import styles from './style'
 
 export default function AboutScreen({navigation}) {
@@ -8,11 +8,12 @@ export default function AboutScreen({navigation}) {
     }
     return (
     <View style={styles.container}>
+        <ImageBackground source={require('../assets/Lemons.png')} style={styles.bgimage}>
         <View style={styles.container}>
         <Text style={styles.title}>Książka kucharska</Text>
         </View>
         <View style={styles.container}>
-        <Text style={styles.authors}>Authors:</Text>
+        <Text style={styles.authors}>Grupa 3ID14A</Text>
         <Text style={styles.authors}>Katarzyna Skrobisz</Text>
         <Text style={styles.authors}>Jakub Pawlik</Text>
         <Text style={styles.authors}>Daniel Stokowiec</Text>
@@ -24,6 +25,7 @@ export default function AboutScreen({navigation}) {
 
         <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
         </View>
+        </ImageBackground>
     </View>
     );
 }
